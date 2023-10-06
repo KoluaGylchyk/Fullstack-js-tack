@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 function useDragger(id: string): void {
   const isClicked = useRef<boolean>(false);
@@ -29,7 +29,7 @@ function useDragger(id: string): void {
       coords.current.startY = e.clientY;
     };
 
-    const onMouseUp = (e: MouseEvent) => {
+    const onMouseUp = () => {
       isClicked.current = false;
       coords.current.lastX = target.offsetLeft;
       coords.current.lastY = target.offsetTop;
