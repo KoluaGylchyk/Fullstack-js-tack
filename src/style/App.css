@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  position: relative;
+  height: 2200px;
+  width: 100vw;
+  overflow: hidden;
+}
+.box-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+input {
+  text-align: center;
+}
+
+.name-categorie {
+  width: 100px;
+}
+.parent-box {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.button-box {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  text-decoration: none;
+}
+button {
+  background: inherit;
+}
